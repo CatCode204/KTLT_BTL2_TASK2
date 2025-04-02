@@ -5,12 +5,12 @@
 
 class Unit {
 protected:
-    int quantity, weight;
-    Position pos;
+    int _quantity, _weight;
+    Position _pos;
 
 public:
     Unit(int quantity, int weight, Position pos);
-    virtual ~Unit();
+    virtual ~Unit() = default;
     virtual int getAttackScore() = 0;
     Position getCurrentPosition() const;
     virtual string str() const = 0;
