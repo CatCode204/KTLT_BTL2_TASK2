@@ -2,6 +2,15 @@
 
 UnitList::UnitList(int capacity): _capacity(capacity) {}
 
+UnitList::~UnitList() {
+    UnitNode* node = this->_head;
+    while (node) {
+        UnitNode* tmp = node;
+        node = node->next;
+        delete tmp;
+    }
+}
+
 bool UnitList::insert(Unit *unit) {
     if (unit == nullptr) return false;
 

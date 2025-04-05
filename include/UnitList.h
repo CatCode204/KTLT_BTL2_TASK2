@@ -15,6 +15,7 @@ private:
 
 public:
     UnitList(int capacity);
+    ~UnitList();
     bool insert(Unit *unit);
     bool isContain(VehicleType vehicleType);
     bool isContain(InfantryType infantryType);
