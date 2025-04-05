@@ -14,6 +14,14 @@ public:
     virtual int getAttackScore() = 0;
     Position getCurrentPosition() const;
     virtual string str() const = 0;
+
+    const int& GetQuantity(); //Read only
+    const int& GetWeight(); //Read only
+    const Position& GetPosition(); //Read only
+
+    void SetQuantity(const int& quantity);
+    void SetWeight(const int& weight);
+    void SetPos(const Position& pos);
 };
 
 #endif // UNIT_H

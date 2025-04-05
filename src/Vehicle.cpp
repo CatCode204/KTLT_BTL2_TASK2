@@ -31,3 +31,7 @@ string Vehicle::str() const {
         << "pos=" << this->_pos.str() << "]";
     return out.str();
 }
+
+VehicleType Vehicle::GetType() const {
+    return this->_type;
+}

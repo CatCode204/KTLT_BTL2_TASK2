@@ -6,19 +6,17 @@ using namespace std;
 
 class Army {
 protected:
-    int LF;        // * Tổng điểm từ các phương tiện (Vehicle)
-    int EXP;       // * Tổng điểm từ các lực lượng bộ binh (Infantry)
-    string name;
+    int _LF;
+    int _EXP;
+    string _name;
     
     
 public:
     UnitList *unitList;
     Army(Unit **unitArray, int size, string name);
-    virtual ~Army();
+    virtual ~Army() = default;
     virtual void fight(Army *enemy, bool defense = false) = 0;
     virtual string str() const = 0;
-
-    // * Additional functions if possible
 };
 
 #endif

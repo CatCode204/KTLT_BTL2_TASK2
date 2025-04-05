@@ -61,3 +61,7 @@ string Infantry::str() const {
         << "pos=" << this->_pos.str() << "]";
     return out.str();
 }
+
+InfantryType Infantry::GetType() const {
+    return this->_type;
+}

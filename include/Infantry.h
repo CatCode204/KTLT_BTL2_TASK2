@@ -22,6 +22,8 @@ public:
     int getAttackScore() override;
     string str() const override;
 
+    InfantryType GetType() const;
+
 private:
     int _CalculateBaseScore() const;
 };

@@ -21,6 +21,8 @@ public:
     Vehicle(int quantity, int weight, Position pos, VehicleType vehicleType);
     int getAttackScore() override;
     string str() const override;
+
+    VehicleType GetType() const;
 };
 
 #endif // VEHICLE_H
